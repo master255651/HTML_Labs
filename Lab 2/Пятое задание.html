@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Пятое задание</title>
+
+	<style>
+   		body {
+      background: #c7b39b url(bg6.jpg); /* Цвет фона и путь к файлу */ 
+    	color: #fff; /* Цвет текста */
+      font-size: 18pt;
+   		}
+  </style>
+
+  <style>
+   		li {
+    	color: #87d4f5; /* Цвет текста */
+      font-size: 17pt;
+   		}
+  </style>
+
+  <style type="text/css">
+   .block1 { 
+    width: 50%; /* Ширина */
+    background: #fc0; /* Цвет фона */
+    padding: 20px; /* Поля */
+    position: relative; 
+    text-align: center;
+    left: 300px;
+    border: solid 5px black; 
+    font-size: 15pt;
+   }
+
+   .block2 { 
+    width: 40%; /* Ширина */
+    background: #52a832; /* Цвет фона */
+    padding: 20px; /* Поля */
+    position: relative; 
+    border: solid 5px black; 
+    font-size: 15pt;
+   }
+
+   .block3 { 
+    width: 50%; /* Ширина */
+    background: #57e3ff; /* Цвет фона */
+    padding: 20px; /* Поля */
+    position: relative; 
+    left: 300px;
+    border: solid 5px black; 
+    font-size: 15pt;
+   }
+
+   .block4 { 
+    width: 50%; /* Ширина */
+    background: #52a832; /* Цвет фона */
+    padding: 20px; /* Поля */
+    position: relative; 
+    left: 600px;
+    border: solid 5px black; 
+    font-size: 15pt;
+   }
+  </style>
+
+  <style>
+  	.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+   }
+   .rightimg  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 100px 25px 0px 0px; /* Отступы вокруг картинки */
+   }
+  </style>
+
+</head>
+
+<body>
+
+	<h2 align="center" style="background: #52d9f7; color: blue">Циклы в C++</h2>
+	
+
+    <div class="block1"> 
+        &nbsp  &nbsp  <i><b><u>Цикл</b></i></u> — многократное прохождение по одному и тому же коду программы. Циклы необходимы программисту для многократного выполнения одного и того же кода, пока истинно какое-то условие. Если условие всегда истинно, то такой цикл называется бесконечным, у такого цикла нет точки выхода.
+    </div>
+
+    <br><br>
+    <div class="block2">
+      В языке программирования С++ существуют такие циклы:
+
+      <ul>
+        <li>Циклы <code><u>while</u></code></li>
+        <li>Циклы <code><u>do while</u></code></li>
+        <li>Циклы <code><u>for</u></code></li>
+      </ul>
+
+    </div>
+
+    <h2 align="center" style="background: #52d9f7; color: blue">Циклы<code><i> while </i></code>в C++</h2>
+
+    <div class="block2"> 
+        &nbsp  &nbsp  Оператор цикла <b><u>while</u></b> или цикл <b><u>while</u></b> - цикл, повторяющий одно и то же действие, пока условие продолжения цикла <b><u>while</u></b> остаётся истинным.
+    </div>
+    <br><br>
+    <div class="block3">
+      <hr> <code>
+        // форма записи цикла while <br>
+        while (/*условие продолжения цикла while*/)<br>
+        {<br>
+          &nbsp &nbsp /*блок операторов*/;<br>
+          &nbsp &nbsp /*управление условием*/;<br>
+        }<br>
+      </code> <hr>
+    </div>
+    <br><br>
+    <div class="block4"> <code>
+        &nbsp &nbsp Условие продолжения цикла должно быть истинно <b><u>true</u></b>, как только условие стало ложным, выполняется выход из цикла. Также как и в условных операторах выбора, фигурные скобочки могут опускаться в том случае, если тело цикла — это один оператор. Но как правило в цикле выполняется несколько операторов, так как кроме выполнения полезного действия необходимо делать условие цикла <b><u>while</u></b> ложным, иначе цикл будет бесконечным, а это, в свою очередь, приведет к зависанию программы.<br><br>
+        &nbsp &nbsp Оператор цикла <b><u>while</u></b> или цикл <b><u>while</u></b> - цикл, с предусловием, так как сначала проверяется условие продолжения цикла, а затем выполняется тело цикла.<br><br>
+        &nbsp &nbsp <code><b>while(0)</b>  или <b>while(false)</b>  не выполнится ни разу<br>
+        &nbsp &nbsp <b>while(1)</b>  или <b>while(true)</b> бесконечный цикл</code>
+    </code> </div>
+
+    <br><br>
+    <div class="block2">
+        <h4><b><u>Задача:</u></b> Вывести числа от 1 до <code>n</code></h4>
+        <i><b>Решение</b></i>
+        <pre>
+          #include <iostream>
+          using namespace std;
+          int main()
+          {
+            int n;
+            cout<<”n=”;
+            cin>>n;
+            int i=1;
+            while(i<=n)
+            {
+              cout<< &#x69 << " ";
+              i++;
+            }
+          }
+
+<b>Ввод</b> 10 
+<b>Вывод</b> 1 2 3 4 5 6 7 8 9 10
+        </pre>
+    </div>
+</body>
+</html>

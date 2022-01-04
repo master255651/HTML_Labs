@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTamGUb88iJReSHZ9sENcE7EElgMGYvwkVVyA&usqp=CAU" type="image/x-icon">
+	<title>Найти отель</title>
+	<style>
+
+		form {
+		  padding: 0;
+		  margin: 0;
+		  font: 14px Comic Sans MS, sans-serif;
+		  background-image: url("https://i.pinimg.com/564x/71/42/ab/7142ab2c11c06601e00714646fd14623.jpg");
+		  width: 455px;
+		}
+
+		.fields {
+		  border: 1px solid #ccc;
+		  padding: 15px 0 30px 10px;
+		  width: 385px;
+		}
+
+		 label {
+		  display: inline-block;
+		  margin: 5px;
+		  width: 200px;
+		  color: black;
+		  }
+
+		  input[type=radio] {
+		    border: 0px;
+		    width: 7%;
+		    height: 10px;
+		}
+		label:nth-child(3n) {
+		  margin-bottom: 40px;
+		  }
+
+		input {
+		  width: 190px;
+		  }
+
+	button {
+	  border: none;
+	  border-radius: 10px;
+	  padding: 3px 15px;
+	  color: #fff;
+	  background: linear-gradient(to right, #1fa221 10%, #23c626 50%, #1fa221);
+	  font-size: 12px;
+	  box-shadow: 0 0 -3px -3px #000;
+	  position: relative;
+	  cursor: pointer;
+	}
+
+	button::before {
+	  content: '';
+	  width: 138px;
+	  height: 11px;
+	  border-radius: 5px;
+	  background: #fff;
+	  position: absolute;
+	  top: 0; left: 50px;
+	  opacity: 30%;
+	  display: none;
+	}
+
+	select, option {
+    width: 200px;
+    height: 30px;
+	}
+
+	.sel{
+		width: 400px;
+    	height: 30px;
+	}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<form action="" method="post" id="register">
+	  <fieldset class="fields">
+
+		<b><h1>
+		Найти
+		<hr width="400px" align="left">
+		</h1></b>
+	  <label for="place">Место/название объекта</label><br>
+	  <input type="text" id="place" placeholder="Ланта-Яй" pattern="^[А-Яа-яЁё]+$" required><span></span><br><br><br>
+
+	  <fieldset>
+	  	  <label for="period1">Дата заезда</label><br>
+		  <input type="date" id="period1" required><span></span><br><br>
+
+		  <label for="period2">Дата отъезда</label><br>
+		  <input type="date" id="period2" required><span></span><br>
+	  </fieldset>
+	  <br><br>
+	  <fieldset>
+	  	  <table>
+		    <tr>
+		        <td>
+		        	<select type="text" id="colP" name ="colP">
+					    <option value="1">1 взлослый</option>
+					    <option selected value="2">2 взрослых</option>
+					    <option value="3">3 взрослых</option>
+					    <option value="4">4 взрослых</option>
+					  </select>
+		        </td>
+		        <td>
+		        	 <select type="text" id="colNum" name ="colNum">
+					    <option selected value="1">1 ребёнок</option>
+					    <option value="2">2 детей</option>
+					    <option value="3">3 детей</option>
+					  </select>
+		        </td>
+		    </tr>
+		    <tr>
+		        <td colspan="2">
+		        	<select type="text" id="AgeCop" name ="AgeCop" class="sel">
+					    <option selected value="1">Детям < 6 лет</option>
+					    <option value="2">Детям < 12 лет</option>
+					    <option value="3">Детям < 18 лет</option>
+					  </select>
+		        </td>
+		    </tr>
+		</table>
+	</fieldset>
+
+	<br>
+	<table>
+	    <tr>
+		    	<td><i class="material-icons">traffic</i></td>
+		        <td><label for="check">Я путешествую по работе</label></td>
+		        <td><input type="checkbox" id="check" required></td>
+		</tr>
+    <tr>
+        <td></td>
+        <td align="right"><br><button type="submit" align="center">Отрпавить</button>
+  </form></td>
+        <td></td>
+    </tr>
+		
+</body>
+</html>

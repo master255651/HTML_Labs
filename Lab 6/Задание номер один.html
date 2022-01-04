@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTamGUb88iJReSHZ9sENcE7EElgMGYvwkVVyA&usqp=CAU" type="image/x-icon">
+	<title>Запись на курсы</title>
+	<style>
+
+		form {
+		  padding: 0;
+		  margin: 0;
+		  font: 14px Comic Sans MS, sans-serif;
+		  background-image: url("https://i.pinimg.com/564x/d6/25/04/d625045f0b22faf8d8ab3bd236f86085.jpg");
+		  width: 400px;
+		}
+
+		.fields {
+		  border: 1px solid #ccc;
+		  padding: 15px 0 30px 10px;
+		  width: 385px;
+		}
+
+		label {
+		  display: inline-block;
+		  margin: 5px;
+		  width: 100px;
+		  color: pink;
+		  }
+
+		  input[type=radio] {
+		    border: 0px;
+		    width: 7%;
+		    height: 10px;
+		}
+		label:nth-child(3n) {
+		  margin-bottom: 40px;
+		  }
+
+		input {
+		  width: 190px;
+		  }
+
+	button {
+	  border: none;
+	  border-radius: 10px;
+	  padding: 3px 15px;
+	  color: #fff;
+	  background: linear-gradient(to right, #1fa221 10%, #23c626 50%, #1fa221);
+	  font-size: 12px;
+	  box-shadow: 0 0 -3px -3px #000;
+	  position: relative;
+	  cursor: pointer;
+	}
+
+	button::before {
+	  content: '';
+	  width: 138px;
+	  height: 11px;
+	  border-radius: 5px;
+	  background: #fff;
+	  position: absolute;
+	  top: 0; left: 3px;
+	  opacity: 30%;
+	  display: none;
+	}
+</style>
+</head>
+<body>
+	<form action="" method="post" id="register">
+	  <fieldset class="fields">
+
+		<b><h3 style="color: red;" align="center">
+		Запись на курсы
+		<hr width="400px" align="left">
+		</h3></b>
+	  <label for="name">Имя</label>
+	  <input type="text" id="name" placeholder="Юрий" pattern="^[А-Яа-яЁё]+$" required><span></span><br>
+
+	  <label for="surname">Фамилия</label>
+	  <input type="text" id="surname" placeholder="Старенко" pattern="^[А-Яа-яЁё]+$" required><span></span><br>
+
+	  <label for="city">Город</label>
+	  <input type="text" id="city" placeholder="Кишинёв" pattern="^[А-Яа-яЁё]+$" required><span></span><br>
+
+	  <label for="email">Эл.почта</label>
+	  <input type="email" id="email" placeholder="example@gmail.com" required><span></span><br>
+
+	  <label for="Secret_word">Секретное слово</label>
+	  <input type="password" id="Secret_word" placeholder="********" required pattern="^[A-Za-zА-Яа-яЁё]{3,}"><span></span><br>
+
+	  <label for="textarea">Дополн. информация</label>
+	  <textarea id="textarea" placeholder="Введите информацию..." pattern="^[А-Яа-яЁё]+$" required rows="3" cols="25"></textarea><span></span><br>
+
+	  <table cellpadding = "5" cellspacing= "0" >
+	    <tr>
+	        <td width="30">
+	        	<label width="20">Язык программ.</label>
+	        </td>
+	        <td width="150">
+			  	<input type="radio" id="С++" name="language" value="С++">
+				<label for="С++">С++</label><br>
+				<input type="radio" id="PHP" name="language" value="PHP">
+				<label for="PHP">PHP</label><br>
+				<input type="radio" id="Python" name="language" value="Python">
+				<label for="Python">Pyt</label>
+	        </td>
+	    </tr>
+	 </table>
+	  
+	  <table cellpadding = "5" cellspacing= "0" align="center">
+	    <tr>
+	        <td width="30">
+				<button type="submit">Отрпавить</button>
+	        </td>
+	        <td width="30">
+				<button type="reset">Очистить</button>
+	        </td>
+	    </tr>
+	 </table>
+
+	  </fieldset>
+  </form>
+</body>
+</html>

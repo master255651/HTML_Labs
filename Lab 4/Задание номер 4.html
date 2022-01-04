@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nested Tables :)</title>
+    <link rel="shortcut icon" href="https://drive.google.com/uc?export=view&id=1A1jWf31JjX6S1moAlsbi13qe7Cu-Qs0t" type="image/x-icon">
+</head>
+<body>
+    <h2 align="left">Nested Tables</h2>
+	<table border = "1px" bordercolor="#4a3eb5" cellpadding = "10" cellspacing= "1">
+	<caption>Таблица номер 4</caption>
+    <thead style="background: #fc0">
+    <tr>
+        <th>Header column 1</th>
+        <th>Header column 2</th>
+        <th>Header column 3</th>
+        <th>Header column 4</th>
+    </tr>
+    </thead>
+    <tbody style="background: #e8a15a">
+    <tr>
+        <td height="30">Row 2 - Item 1</td>
+        <td>Row 2 - Item 2</td>
+        <td rowspan="2" align="left">
+            <br><br><b>Row 2: Nested Table 1</b><br><br><br>
+            <table border = "1px" bordercolor="#0514e6" cellpadding = "5" cellspacing= "0" style="background: #a0cee8">
+                <tr>
+                    <th>Row 1 Header</th>
+                    <td>item</td>
+                </tr>
+                <tr>
+                    <th>Row 2 Header</th>
+                    <td>item</td>
+                </tr>
+                <tr>
+                    <th>Row 3 Header</th>
+                    <td>item</td>
+                </tr>
+            </table>
+        </td>
+        <td>Row 2 - Item 4<br>A second line</td>
+    </tr>
+    <tr>
+        <td>
+            <br><br><b>Row 3: Nested Table 2</b><br><br><br>
+            <table border = "1px" bordercolor="#0514e6" cellpadding = "5" cellspacing= "0" style="background: #a0cee8">
+                <tr>
+                    <th>Row 1 Header</th>
+                    <td>item</td>
+                </tr>
+                <tr>
+                    <th>Row 2 Header</th>
+                    <td>item</td>
+                </tr>
+            </table>
+        </td>
+        <td valign="center" align="legt">Row 3 - Item 2</td>
+        <td rowspan="2" valign="center" align="legt">Row 3 - Item 3</td>
+    </tr>
+    <tr>
+        <td>Row 4 - Item 1</td>
+        <td>Row 4 - Item 2</td>
+        <td>Row 4 - Item 3</td>
+    </tr>
+    </tbody>
+    <tfoot style="background: #e84d3f">
+    <tr>
+        <td colspan="4">Row 5 - Last row of outer table</td>
+    </tr>
+    </tfoot>
+</table>
+</body>
+</html>
